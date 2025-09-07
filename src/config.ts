@@ -140,8 +140,8 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
 	carousel: {
-		enable: true, // 启用轮播
-		interval: 1, // 轮播间隔时间（秒）
+		enable: false, // 启用轮播
+		interval: 10, // 轮播间隔时间（秒）
 	},
 	zIndex: -1, // 层级，确保壁纸在背景层
 	opacity: 0.8, // 壁纸透明度
@@ -177,14 +177,19 @@ export const profileConfig: ProfileConfig = {
 			url: "https://space.bilibili.com/151165899",
 		},
 		{
-			name: "Telegram",
-			icon: "fa6-brands:telegram",
-			url: "https://t.me/SakuraSaber",
+			name: "CloudMusic",
+			icon: "simple-icons:neteasecloudmusic",
+			url: "https://music.163.com/#/user/home?id=531850627",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
 			url: "https://github.com/LuoYingPiaoXue",
+		},
+		{
+			name: "Telegram",
+			icon: "fa6-brands:telegram",
+			url: "https://t.me/SakuraSaber",
 		},
 	],
 	// Umami统计部份，记得在layout插入Umami的head标签
