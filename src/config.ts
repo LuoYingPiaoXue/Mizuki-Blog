@@ -22,8 +22,8 @@ import { getTranslateLanguageFromConfig } from "./utils/language-utils";
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
-	subtitle: "One demo website",
+	title: "落桜飘雪的小窝",
+	subtitle: "一个自娱自乐的小地~",
 
 	lang: SITE_LANG,
 
@@ -41,7 +41,7 @@ export const siteConfig: SiteConfig = {
 		ignoreTags: ["script", "style", "code", "pre"], // 翻译时忽略的 HTML 标签
 	},
 	banner: {
-		enable: true, // 是否启动Banner壁纸模式
+		enable: false, // 是否启动Banner壁纸模式
 
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
@@ -81,17 +81,12 @@ export const siteConfig: SiteConfig = {
 		// 请自行搭建API
 
 		homeText: {
-			enable: true, // 在主页显示自定义文本
-			title: "Beautiful Mizuki!", // 主页横幅主标题
+			enable: false, // 在主页显示自定义文本
+			title: "落桜飘雪的小窝", // 主页横幅主标题
 
-			subtitle: [
-				"A Showcase Demo Site",
-				"Carousel Highlight: Innovation",
-				"Carousel Focus: User Experience",
-				"Carousel Spot: Core Advantages",
-			],
+			subtitle: ["一个自娱自乐的小地~"],
 			typewriter: {
-				enable: true, // 启用副标题打字机效果
+				enable: false, // 启用副标题打字机效果
 
 				speed: 100, // 打字速度（毫秒）
 				deleteSpeed: 50, // 删除速度（毫秒）
@@ -107,7 +102,7 @@ export const siteConfig: SiteConfig = {
 		},
 
 		navbar: {
-			transparentMode: "semifull", // 导航栏透明模式："semi" 半透明加圆角，"full" 完全透明，"semifull" 动态透明
+			transparentMode: "semi", // 导航栏透明模式："semi" 半透明加圆角，"full" 完全透明，"semifull" 动态透明
 		},
 	},
 	toc: {
@@ -150,7 +145,7 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	},
 	zIndex: -1, // 层级，确保壁纸在背景层
 	opacity: 0.8, // 壁纸透明度
-	blur: 1, // 背景模糊程度
+	blur: 8, // 背景模糊程度
 };
 
 export const navBarConfig: NavBarConfig = {
@@ -159,35 +154,20 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		// 支持自定义导航栏链接,并且支持多级菜单,3.1版本新加
 		{
-			name: "链接",
-			url: "/links/",
-			icon: "material-symbols:link",
-			children: [
-				{
-					name: "GitHub",
-					url: "https://github.com/matsuzaka-yuki/Mizuki",
-					external: true,
-					icon: "fa6-brands:github",
-				},
-				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
-					external: true,
-					icon: "fa6-brands:bilibili",
-				},
-				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
-					external: true,
-					icon: "mdi:git",
-				},
-			],
+			name: "友链",
+			url: "/friends/",
+			icon: "material-symbols:contacts-product",
 		},
 		{
 			name: "我的",
 			url: "/content/",
 			icon: "material-symbols:person",
 			children: [
+				{
+					name: "信息",
+					url: "/about/",
+					icon: "material-symbols:info",
+				},
 				LinkPreset.Anime,
 				LinkPreset.Diary,
 				{
@@ -197,56 +177,28 @@ export const navBarConfig: NavBarConfig = {
 				},
 			],
 		},
-		{
-			name: "关于",
-			url: "/content/",
-			icon: "material-symbols:info",
-			children: [LinkPreset.About, LinkPreset.Friends],
-		},
-		{
-			name: "其他",
-			url: "#",
-			icon: "material-symbols:more-horiz",
-			children: [
-				{
-					name: "项目展示",
-					url: "/projects/",
-					icon: "material-symbols:work",
-				},
-				{
-					name: "技能展示",
-					url: "/skills/",
-					icon: "material-symbols:psychology",
-				},
-				{
-					name: "时间线",
-					url: "/timeline/",
-					icon: "material-symbols:timeline",
-				},
-			],
-		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.gif", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "Mizuki",
-	bio: "世界很大,一定要去看看",
+	avatar: "assets/images/avatar.png", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	name: "落桜飘雪",
+	bio: "一无所有的 是否值得谈梦呢",
 	links: [
 		{
 			name: "Bilibli",
 			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
+			url: "https://space.bilibili.com/151165899",
 		},
 		{
-			name: "Gitee",
-			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
+			name: "Telegram",
+			icon: "fa6-brands:telegram",
+			url: "https://t.me/SakuraSaber",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
+			url: "https://github.com/LuoYingPiaoXue",
 		},
 	],
 	// Umami统计部份，记得在layout插入Umami的head标签
@@ -272,7 +224,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 export const commentConfig: CommentConfig = {
 	enable: false, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
-		envId: "https://twikoo.vercel.app",
+		envId: "",
 	},
 };
 
