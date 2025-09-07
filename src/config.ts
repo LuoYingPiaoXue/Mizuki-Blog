@@ -159,23 +159,9 @@ export const navBarConfig: NavBarConfig = {
 			icon: "material-symbols:contacts-product",
 		},
 		{
-			name: "我的",
-			url: "/content/",
-			icon: "material-symbols:person",
-			children: [
-				{
-					name: "信息",
-					url: "/about/",
-					icon: "material-symbols:info",
-				},
-				LinkPreset.Anime,
-				LinkPreset.Diary,
-				{
-					name: "相册",
-					url: "/albums/",
-					icon: "material-symbols:photo-library",
-				},
-			],
+			name: "关于",
+			url: "/about/",
+			icon: "material-symbols:info",
 		},
 	],
 };
