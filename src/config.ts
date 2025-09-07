@@ -220,12 +220,12 @@ export const commentConfig: CommentConfig = {
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "公告", // 公告标题
-	content: "欢迎来到我的博客！这是一个示例公告。", // 公告内容
+	title: "欢迎~", // 公告标题
+	content: "欢迎来到我的小窝~(*/ω＼*) 愿你能够玩的开心~ヾ(≧▽≦*)o", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
-		text: "了解更多", // 链接文本
+		text: "关于我", // 链接文本
 		url: "/about/", // 链接 URL
 		external: false, // 内部链接
 	},
