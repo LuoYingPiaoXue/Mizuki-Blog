@@ -6384,6 +6384,10 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
+  '@iconify-json/simple-icons@1.2.50':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify/svelte@4.2.0(svelte@5.38.7)':
     dependencies:
       '@iconify/types': 2.0.0
